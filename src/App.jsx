@@ -52,13 +52,13 @@ example data:
 
 function App() {
   const [deposits, setDeposits] = useState([])
-
-  useEffect(() => {
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => setDeposits(data))
-  }, [])
-
+  const fieldMap = [
+    { key: 'property', label: 'Property' },
+    { key: 'moveInDate', label: 'Move In Date' },
+    { key: 'rent', label: 'Rent' },
+    { key: 'deposit', label: 'Deposit' },
+    { key: 'status', label: 'Status' },
+  ]
   const [activeDeposits, setActiveFilter] = useFilter(
     deposits,
     (deposit, filter) => deposit.statusType === filter
@@ -68,6 +68,12 @@ function App() {
     (deposit, filter) => deposit.statusType === filter
   )
   
+  useEffect(() => {
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => setDeposits(data))
+  }, [])
+
   useEffect(() => {
     setActiveFilter('active')
     setClosedFilter('closed')
@@ -82,14 +88,14 @@ function App() {
           <h2>Active Deposits &nbsp;
             <output>{activeDeposits.length}</output>
           </h2>
-          <Table items={activeDeposits}/>
+          <Table items={activeDeposits} columns={fieldMap}/>
         </section>
 
         <section>
           <h2>Closed Deposits &nbsp;
             <output>{closedDeposits.length}</output>
           </h2>
-          <Table items={closedDeposits}/>
+          <Table items={closedDeposits} columns={fieldMap}/>
         </section>
       </main>
     </>

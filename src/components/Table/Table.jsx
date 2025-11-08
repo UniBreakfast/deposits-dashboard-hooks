@@ -1,39 +1,22 @@
-function Table({ items }) {
+function Table({ items, columns }) {
+  const rows = items.map(item => {
+    return (
+      <tr key={item.id}>
+        {columns.map(
+          column => <td key={column.key}>{item[column.key]}</td>
+        )}
+      </tr>
+    )
+  })
+  const headings = columns.map(
+    column => <th key={column.key}>{column.label}</th>
+  )
   return (
     <table>
       <thead>
-        <tr>
-          <th>Property</th>
-          <th>Move In Date</th>
-          <th>Rent</th>
-          <th>Deposit</th>
-          <th>Status</th>
-        </tr>
+        <tr>{headings}</tr>
       </thead>
-      <tbody>
-        {/* <tr>
-          <td>771 Lost Round</td>
-          <td>25 February 2020</td>
-          <td>3000</td>
-          <td>9000</td>
-          <td>Awaiting Bank Processing</td>
-        </tr> */}
-        {
-          items.map(item => {
-            const { id, property, moveInDate, rent, deposit, status } = item
-
-            return (
-              <tr key={id}>
-                <td>{property}</td>
-                <td>{moveInDate}</td>
-                <td>{rent}</td>
-                <td>{deposit}</td>
-                <td>{status}</td>
-              </tr>
-            )
-          })
-        }
-      </tbody>
+      <tbody>{rows}</tbody>
     </table>
   )
 }
