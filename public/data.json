@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "statusType": "active",
+    "property": "771 Lost Round",
+    "location": "Sacramento CA",
+    "moveInDate": "25 February 2020",
+    "rent": 3000,
+    "deposit": 9000,
+    "depositType": "First, Last & Security",
+    "status": "Awaiting Bank Processing"
+  },
+  {
+    "id": 2,
+    "statusType": "active",
+    "property": "1491 Jagged Arbor",
+    "location": "San Antonio TX",
+    "moveInDate": "12 March 2020",
+    "rent": 2300,
+    "deposit": 4600,
+    "depositType": "First & Last",
+    "status": "Payment Processed"
+  },
+  {
+    "id": 3,
+    "statusType": "closed",
+    "property": "1694 Noble Cape",
+    "location": "Las Vegas NV",
+    "moveInDate": "3 February 2020",
+    "rent": 3300,
+    "deposit": 6900,
+    "depositType": "Complete",
+    "status": "Awaiting Bank Processing"
+  },
+  {
+    "id": 4,
+    "statusType": "closed",
+    "property": "1141 Tawny Maze",
+    "location": "Raleigh NC",
+    "moveInDate": "12 January 2020",
+    "rent": 2500,
+    "deposit": 7500,
+    "depositType": "First, Last & Security",
+    "status": "Expired: No Payment Received"
+  },
+  {
+    "id": 5,
+    "statusType": "closed",
+    "property": "210 Silver Pines",
+    "location": "Portland OR",
+    "moveInDate": "20 April 2020",
+    "rent": 1800,
+    "deposit": 3600,
+    "depositType": "First & Last",
+    "status": "Refunded"
+  },
+  {
+    "id": 6,
+    "statusType": "closed",
+    "property": "382 Coral Bend",
+    "location": "Miami FL",
+    "moveInDate": "01 May 2020",
+    "rent": 2500,
+    "deposit": 5000,
+    "depositType": "First, Last & Security",
+    "status": "Closed - Returned"
+  },
+  {
+    "id": 7,
+    "statusType": "closed",
+    "property": "57 Maple Hollow",
+    "location": "Denver CO",
+    "moveInDate": "15 March 2020",
+    "rent": 1500,
+    "deposit": 1500,
+    "depositType": "Security Only",
+    "status": "Payment Processed"
+  },
+  {
+    "id": 8,
+    "statusType": "closed",
+    "property": "908 Beacon Hill",
+    "location": "Boston MA",
+    "moveInDate": "28 February 2020",
+    "rent": 3200,
+    "deposit": 6400,
+    "depositType": "First & Last",
+    "status": "Disputed - Under Review"
+  },
+  {
+    "id": 9,
+    "statusType": "closed",
+    "property": "233 Ocean Terrace",
+    "location": "San Diego CA",
+    "moveInDate": "04 January 2020",
+    "rent": 2700,
+    "deposit": 5400,
+    "depositType": "First & Last",
+    "status": "Complete"
+  },
+  {
+    "id": 10,
+    "statusType": "closed",
+    "property": "48 Cedar Grove",
+    "location": "Austin TX",
+    "moveInDate": "10 June 2020",
+    "rent": 2100,
+    "deposit": 2100,
+    "depositType": "Security Only",
+    "status": "Cancelled: Tenant Withdrew"
+  }
+]
