@@ -1,4 +1,7 @@
 function Table({ items, columns }) {
+  const headings = columns.map(
+    column => <th key={column.key}>{column.label}</th>
+  )
   const rows = items.map(item => {
     return (
       <tr key={item.id}>
@@ -8,9 +11,7 @@ function Table({ items, columns }) {
       </tr>
     )
   })
-  const headings = columns.map(
-    column => <th key={column.key}>{column.label}</th>
-  )
+  
   return (
     <table>
       <thead>
